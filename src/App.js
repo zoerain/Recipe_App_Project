@@ -3,6 +3,7 @@ import "./App.css";
 import RecipeCreate from "./RecipeCreate";
 import RecipeList from "./RecipeList";
 import RecipeData from "./RecipeData"
+import Recipe from "./Recipe";
 
 function App() {
   
@@ -24,7 +25,7 @@ function App() {
   return (
     <div className="App">
       <header><h1>Delicious Food Recipes</h1></header>
-      <RecipeList recipes={recipes} handleDelete={deleteRecipe} />
+      <RecipeList recipes={recipes} deleteRecipe={deleteRecipe} />
       <RecipeCreate addRecipes={addRecipes} />
       <Recipe />
     </div>

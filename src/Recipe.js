@@ -1,6 +1,7 @@
 import React, { useState } from "react";
+import App from "./App";
 
-function Recipe({ recipe, handleDelete }) {
+function Recipe({ recipe, deleteRecipe }) {
 
  const { name, cuisine, photo, ingredients, preparation } = recipe;
 
