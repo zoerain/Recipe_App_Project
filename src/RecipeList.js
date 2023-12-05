@@ -1,7 +1,7 @@
 import React from "react";
 import Recipe from "./Recipe";
 
-function RecipeList({recipes, handleDelete}) {
+function RecipeList({recipes, deleteRecipe}) {
   
   // TODO: Display the list of recipes using the structure of table that is provided.
   // TODO: Create at least one additional component that is used by this component.
@@ -35,7 +35,7 @@ function RecipeList({recipes, handleDelete}) {
               <td>
                 <button
                   name="delete"
-                  onClick={() => handleDelete(index)}
+                  onClick={() => deleteRecipe(index)}
                 >
                   Delete
                 </button>
